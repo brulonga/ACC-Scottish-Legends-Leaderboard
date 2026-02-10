@@ -1,0 +1,362 @@
+{
+  "global": [
+    {
+      "name": "keVin peeters",
+      "points": 246,
+      "avg_points": 123.0,
+      "avg_pos": 5.5,
+      "avg_gap": "+0.064",
+      "races": 2
+    },
+    {
+      "name": "Marty Fox",
+      "points": 201,
+      "avg_points": 100.5,
+      "avg_pos": 4.5,
+      "avg_gap": "+3.756",
+      "races": 2
+    },
+    {
+      "name": "Dominic [LZRT] Zimmermann",
+      "points": 180,
+      "avg_points": 180.0,
+      "avg_pos": 1.0,
+      "avg_gap": "+1.118",
+      "races": 1
+    },
+    {
+      "name": "Rumi  Mochizuki",
+      "points": 150,
+      "avg_points": 150.0,
+      "avg_pos": 2.0,
+      "avg_gap": "+2.873",
+      "races": 1
+    },
+    {
+      "name": "Ross Malligan",
+      "points": 150,
+      "avg_points": 150.0,
+      "avg_pos": 2.0,
+      "avg_gap": "+0.000",
+      "races": 1
+    },
+    {
+      "name": "Vlad Mirea",
+      "points": 120,
+      "avg_points": 120.0,
+      "avg_pos": 3.0,
+      "avg_gap": "-",
+      "races": 1
+    },
+    {
+      "name": "Alexandre Bras",
+      "points": 120,
+      "avg_points": 120.0,
+      "avg_pos": 3.0,
+      "avg_gap": "+3.797",
+      "races": 1
+    },
+    {
+      "name": "ALESSIO LAMPIS",
+      "points": 105,
+      "avg_points": 105.0,
+      "avg_pos": 4.0,
+      "avg_gap": "+17.378",
+      "races": 1
+    },
+    {
+      "name": "Alan Macleod",
+      "points": 96,
+      "avg_points": 96.0,
+      "avg_pos": 5.0,
+      "avg_gap": "+1.385",
+      "races": 1
+    },
+    {
+      "name": "Sukhaporn Pukhiraphat",
+      "points": 90,
+      "avg_points": 90.0,
+      "avg_pos": 6.0,
+      "avg_gap": "+31.353",
+      "races": 1
+    },
+    {
+      "name": "Fafy Silva",
+      "points": 84,
+      "avg_points": 84.0,
+      "avg_pos": 7.0,
+      "avg_gap": "+22.820",
+      "races": 1
+    },
+    {
+      "name": "Paul Hochrainer",
+      "points": 78,
+      "avg_points": 78.0,
+      "avg_pos": 8.0,
+      "avg_gap": "-",
+      "races": 1
+    },
+    {
+      "name": "Dixie Normus",
+      "points": 72,
+      "avg_points": 72.0,
+      "avg_pos": 9.0,
+      "avg_gap": "-",
+      "races": 1
+    },
+    {
+      "name": "Nur Adli",
+      "points": 60,
+      "avg_points": 60.0,
+      "avg_pos": 11.0,
+      "avg_gap": "-",
+      "races": 1
+    },
+    {
+      "name": "Madura Premaratne",
+      "points": 57,
+      "avg_points": 57.0,
+      "avg_pos": 12.0,
+      "avg_gap": "+3.573",
+      "races": 1
+    },
+    {
+      "name": "Renaud Zibro",
+      "points": 54,
+      "avg_points": 54.0,
+      "avg_pos": 13.0,
+      "avg_gap": "+32.908",
+      "races": 1
+    },
+    {
+      "name": "horacehuang17",
+      "points": 51,
+      "avg_points": 51.0,
+      "avg_pos": 14.0,
+      "avg_gap": "+2.028",
+      "races": 1
+    },
+    {
+      "name": "Nikita Koval",
+      "points": 48,
+      "avg_points": 48.0,
+      "avg_pos": 15.0,
+      "avg_gap": "-",
+      "races": 1
+    }
+  ],
+  "sessions": [
+    {
+      "id": "race_0",
+      "name": "Round 1: Nurburgring 24H",
+      "results": [
+        {
+          "pos": 1,
+          "name": "Dominic [LZRT] Zimmermann",
+          "points": 180,
+          "laps": 5,
+          "avg_time": "8:21.359",
+          "gap_pace": "PACE REF",
+          "best_lap": "8:19.165",
+          "gap_best": "+1.118"
+        },
+        {
+          "pos": 2,
+          "name": "Rumi  Mochizuki",
+          "points": 150,
+          "laps": 5,
+          "avg_time": "8:22.809",
+          "gap_pace": "+1.450",
+          "best_lap": "8:20.920",
+          "gap_best": "+2.873"
+        },
+        {
+          "pos": 3,
+          "name": "Vlad Mirea",
+          "points": 120,
+          "laps": 5,
+          "avg_time": "8:43.966",
+          "gap_pace": "+22.607",
+          "best_lap": "-",
+          "gap_best": "-"
+        },
+        {
+          "pos": 4,
+          "name": "ALESSIO LAMPIS",
+          "points": 105,
+          "laps": 5,
+          "avg_time": "8:44.294",
+          "gap_pace": "+22.935",
+          "best_lap": "8:35.425",
+          "gap_best": "+17.378"
+        },
+        {
+          "pos": 5,
+          "name": "Marty Fox",
+          "points": 96,
+          "laps": 5,
+          "avg_time": "9:05.478",
+          "gap_pace": "+44.119",
+          "best_lap": "8:25.137",
+          "gap_best": "+7.090"
+        },
+        {
+          "pos": 6,
+          "name": "Sukhaporn Pukhiraphat",
+          "points": 90,
+          "laps": 5,
+          "avg_time": "9:17.707",
+          "gap_pace": "+56.348",
+          "best_lap": "8:49.400",
+          "gap_best": "+31.353"
+        },
+        {
+          "pos": 7,
+          "name": "Fafy Silva",
+          "points": 84,
+          "laps": 5,
+          "avg_time": "9:19.195",
+          "gap_pace": "+57.836",
+          "best_lap": "8:40.867",
+          "gap_best": "+22.820"
+        },
+        {
+          "pos": 8,
+          "name": "Paul Hochrainer",
+          "points": 78,
+          "laps": 5,
+          "avg_time": "9:21.380",
+          "gap_pace": "+60.021",
+          "best_lap": "-",
+          "gap_best": "-"
+        },
+        {
+          "pos": 9,
+          "name": "Dixie Normus",
+          "points": 72,
+          "laps": 5,
+          "avg_time": "9:32.464",
+          "gap_pace": "+71.105",
+          "best_lap": "-",
+          "gap_best": "-"
+        },
+        {
+          "pos": 10,
+          "name": "keVin peeters",
+          "points": 66,
+          "laps": 4,
+          "avg_time": "9:04.766",
+          "gap_pace": "+43.407",
+          "best_lap": "8:18.047",
+          "gap_best": "BEST LAP"
+        },
+        {
+          "pos": 11,
+          "name": "Nur Adli",
+          "points": 60,
+          "laps": 4,
+          "avg_time": "10:37.273",
+          "gap_pace": "+135.914",
+          "best_lap": "-",
+          "gap_best": "-"
+        },
+        {
+          "pos": 12,
+          "name": "Madura Premaratne",
+          "points": 57,
+          "laps": 4,
+          "avg_time": "11:12.295",
+          "gap_pace": "+170.936",
+          "best_lap": "8:21.620",
+          "gap_best": "+3.573"
+        },
+        {
+          "pos": 13,
+          "name": "Renaud Zibro",
+          "points": 54,
+          "laps": 4,
+          "avg_time": "11:21.567",
+          "gap_pace": "+180.208",
+          "best_lap": "8:50.955",
+          "gap_best": "+32.908"
+        },
+        {
+          "pos": 14,
+          "name": "horacehuang17",
+          "points": 51,
+          "laps": 3,
+          "avg_time": "10:22.122",
+          "gap_pace": "+120.763",
+          "best_lap": "8:20.075",
+          "gap_best": "+2.028"
+        },
+        {
+          "pos": 15,
+          "name": "Nikita Koval",
+          "points": 48,
+          "laps": 3,
+          "avg_time": "11:21.260",
+          "gap_pace": "+179.901",
+          "best_lap": "-",
+          "gap_best": "-"
+        }
+      ]
+    },
+    {
+      "id": "race_1",
+      "name": "Round 2: Zolder",
+      "results": [
+        {
+          "pos": 1,
+          "name": "keVin peeters",
+          "points": 180,
+          "laps": 20,
+          "avg_time": "1:30.974",
+          "gap_pace": "PACE REF",
+          "best_lap": "1:30.107",
+          "gap_best": "+0.127"
+        },
+        {
+          "pos": 2,
+          "name": "Ross Malligan",
+          "points": 150,
+          "laps": 20,
+          "avg_time": "1:31.035",
+          "gap_pace": "+0.061",
+          "best_lap": "1:29.980",
+          "gap_best": "BEST LAP"
+        },
+        {
+          "pos": 3,
+          "name": "Alexandre Bras",
+          "points": 120,
+          "laps": 17,
+          "avg_time": "1:51.129",
+          "gap_pace": "+20.155",
+          "best_lap": "1:33.777",
+          "gap_best": "+3.797"
+        },
+        {
+          "pos": 4,
+          "name": "Marty Fox",
+          "points": 105,
+          "laps": 16,
+          "avg_time": "1:36.946",
+          "gap_pace": "+5.971",
+          "best_lap": "1:30.402",
+          "gap_best": "+0.422"
+        },
+        {
+          "pos": 5,
+          "name": "Alan Macleod",
+          "points": 96,
+          "laps": 10,
+          "avg_time": "1:38.713",
+          "gap_pace": "+7.738",
+          "best_lap": "1:31.365",
+          "gap_best": "+1.385"
+        }
+      ]
+    }
+  ]
+}
