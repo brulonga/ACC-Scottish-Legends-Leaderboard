@@ -77,7 +77,8 @@
 <script>
     let fullData = null;
 
-    fetch('dashboard_data.json')
+    // Añadimos ?v= y la hora actual para obligar a descargar el archivo nuevo
+    fetch('dashboard_data.json?v=' + new Date().getTime())
         .then(response => response.json())
         .then(data => {
             fullData = data;
