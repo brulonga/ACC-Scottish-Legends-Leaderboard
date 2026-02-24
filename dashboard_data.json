@@ -1,6 +1,22 @@
 {
   "global": [
     {
+      "name": "Biggie Smalls",
+      "points": 330,
+      "avg_points": 165.0,
+      "avg_pos": 1.5,
+      "avg_gap": "+0.179",
+      "races": 2
+    },
+    {
+      "name": "Dominic [LZRT] Zimmermann",
+      "points": 240,
+      "avg_points": 120.0,
+      "avg_pos": 3.0,
+      "avg_gap": "+3.646",
+      "races": 2
+    },
+    {
       "name": "Robert [LZRT]Olsson",
       "points": 180,
       "avg_points": 180.0,
@@ -9,19 +25,27 @@
       "races": 1
     },
     {
-      "name": "Biggie Smalls",
+      "name": "Wojtek Bogdanowicz",
+      "points": 180,
+      "avg_points": 90.0,
+      "avg_pos": 6.0,
+      "avg_gap": "+4.067",
+      "races": 2
+    },
+    {
+      "name": "Bruno Longarela",
+      "points": 168,
+      "avg_points": 84.0,
+      "avg_pos": 7.0,
+      "avg_gap": "+6.716",
+      "races": 2
+    },
+    {
+      "name": "Livio Maspoli",
       "points": 150,
       "avg_points": 150.0,
       "avg_pos": 2.0,
       "avg_gap": "+0.000",
-      "races": 1
-    },
-    {
-      "name": "Dominic [LZRT] Zimmermann",
-      "points": 120,
-      "avg_points": 120.0,
-      "avg_pos": 3.0,
-      "avg_gap": "+4.717",
       "races": 1
     },
     {
@@ -30,6 +54,14 @@
       "avg_points": 105.0,
       "avg_pos": 4.0,
       "avg_gap": "+0.267",
+      "races": 1
+    },
+    {
+      "name": "Jason Clarke",
+      "points": 105,
+      "avg_points": 105.0,
+      "avg_pos": 4.0,
+      "avg_gap": "+1.923",
       "races": 1
     },
     {
@@ -49,19 +81,19 @@
       "races": 1
     },
     {
-      "name": "Wojtek Bogdanowicz",
+      "name": "Karl Zwiebel",
       "points": 84,
       "avg_points": 84.0,
       "avg_pos": 7.0,
-      "avg_gap": "+6.337",
+      "avg_gap": "+2.738",
       "races": 1
     },
     {
-      "name": "Bruno Longarela",
+      "name": "Bence Kamaras",
       "points": 78,
       "avg_points": 78.0,
       "avg_pos": 8.0,
-      "avg_gap": "+11.142",
+      "avg_gap": "+0.993",
       "races": 1
     },
     {
@@ -73,11 +105,27 @@
       "races": 1
     },
     {
+      "name": "Alan Macleod",
+      "points": 72,
+      "avg_points": 72.0,
+      "avg_pos": 9.0,
+      "avg_gap": "+1.120",
+      "races": 1
+    },
+    {
       "name": "Batuhan Demirel",
       "points": 66,
       "avg_points": 66.0,
       "avg_pos": 10.0,
       "avg_gap": "+15.010",
+      "races": 1
+    },
+    {
+      "name": "Viktor Ruga",
+      "points": 66,
+      "avg_points": 66.0,
+      "avg_pos": 10.0,
+      "avg_gap": "+3.805",
       "races": 1
     },
     {
@@ -239,6 +287,112 @@
           "gap_pace": "+61.273",
           "best_lap": "8:25.602",
           "gap_best": "+5.777"
+        }
+      ]
+    },
+    {
+      "id": "race_1",
+      "name": "Round 2: Mount Panorama",
+      "results": [
+        {
+          "pos": 1,
+          "name": "Biggie Smalls",
+          "points": 180,
+          "laps": 44,
+          "avg_time": "2:05.392",
+          "gap_pace": "PACE REF",
+          "best_lap": "2:02.385",
+          "gap_best": "+0.358"
+        },
+        {
+          "pos": 2,
+          "name": "Livio Maspoli",
+          "points": 150,
+          "laps": 44,
+          "avg_time": "2:05.986",
+          "gap_pace": "+0.595",
+          "best_lap": "2:02.027",
+          "gap_best": "BEST LAP"
+        },
+        {
+          "pos": 3,
+          "name": "Dominic [LZRT] Zimmermann",
+          "points": 120,
+          "laps": 43,
+          "avg_time": "2:08.239",
+          "gap_pace": "+2.848",
+          "best_lap": "2:04.602",
+          "gap_best": "+2.575"
+        },
+        {
+          "pos": 4,
+          "name": "Jason Clarke",
+          "points": 105,
+          "laps": 42,
+          "avg_time": "2:09.359",
+          "gap_pace": "+3.968",
+          "best_lap": "2:03.950",
+          "gap_best": "+1.923"
+        },
+        {
+          "pos": 5,
+          "name": "Wojtek Bogdanowicz",
+          "points": 96,
+          "laps": 42,
+          "avg_time": "2:14.117",
+          "gap_pace": "+8.726",
+          "best_lap": "2:03.825",
+          "gap_best": "+1.798"
+        },
+        {
+          "pos": 6,
+          "name": "Bruno Longarela",
+          "points": 90,
+          "laps": 41,
+          "avg_time": "2:16.080",
+          "gap_pace": "+10.688",
+          "best_lap": "2:04.317",
+          "gap_best": "+2.290"
+        },
+        {
+          "pos": 7,
+          "name": "Karl Zwiebel",
+          "points": 84,
+          "laps": 40,
+          "avg_time": "2:18.874",
+          "gap_pace": "+13.482",
+          "best_lap": "2:04.765",
+          "gap_best": "+2.738"
+        },
+        {
+          "pos": 8,
+          "name": "Bence Kamaras",
+          "points": 78,
+          "laps": 38,
+          "avg_time": "2:25.324",
+          "gap_pace": "+19.933",
+          "best_lap": "2:03.020",
+          "gap_best": "+0.993"
+        },
+        {
+          "pos": 9,
+          "name": "Alan Macleod",
+          "points": 72,
+          "laps": 37,
+          "avg_time": "2:26.740",
+          "gap_pace": "+21.348",
+          "best_lap": "2:03.147",
+          "gap_best": "+1.120"
+        },
+        {
+          "pos": 10,
+          "name": "Viktor Ruga",
+          "points": 66,
+          "laps": 35,
+          "avg_time": "2:39.194",
+          "gap_pace": "+33.802",
+          "best_lap": "2:05.832",
+          "gap_best": "+3.805"
         }
       ]
     }
