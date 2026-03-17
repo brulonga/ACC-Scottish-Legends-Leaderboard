@@ -3,7 +3,7 @@ import glob
 import os
 
 # --- CONFIGURATION ---
-MIN_LAPS_PERCENTAGE = 0.70 
+MIN_LAPS_PERCENTAGE = 0.50 
 OUTPUT_FILE = "dashboard_data.json"
 
 POINTS_SYSTEM = {
