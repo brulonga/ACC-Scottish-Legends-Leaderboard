@@ -34,11 +34,7 @@
         .session-nav-btn { background: #e9ecef; border: none; padding: 8px 20px; font-weight: bold; color: #495057; border-radius: 5px 5px 0 0; cursor: pointer;}
         .session-nav-btn.active { background: #0d6efd; color: white; }
 
-        /* H2H STYLES */
         .vs-badge { background: #212529; color: white; padding: 5px 10px; border-radius: 20px; font-weight: bold; font-style: italic;}
-        .comp-card { border: 1px solid #dee2e6; border-radius: 8px; background: white; text-align: center; padding: 15px; height: 100%;}
-        .comp-driver-1 { border-top: 4px solid #0d6efd; }
-        .comp-driver-2 { border-top: 4px solid #dc3545; }
     </style>
 </head>
 <body>
@@ -227,7 +223,7 @@
             <div class="col-lg-12 mb-4">
                 <h5 class="text-secondary">Gaps Evolution (Qualy vs Race Pace vs Best Lap)</h5>
                 <div class="chart-container" style="height: 280px;"><canvas id="chartGapsEvolution"></canvas></div>
-                <div class="text-muted text-small text-center mt-1">* Note: Gap values for the Nordschleife are divided by 4 in this chart to normalize the scale against standard tracks.</div>
+                <div class="text-muted text-small text-center mt-1">* Note: Gap values for the Nordschleife are divided by 4 in this chart.</div>
             </div>
         </div>
 
@@ -237,9 +233,8 @@
             <div class="col-lg-8 mb-4">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                     <h5 class="text-secondary mb-0">Clean Lap Telemetry</h5>
-                    <select id="driverRaceSelector" class="form-select form-select-sm w-auto" onchange="renderRaceAnalysis()"></select>
+                    <select id="driverRaceSelector" class="form-select form-select-sm w-auto" onchange="renderProfileRaceAnalysis()"></select>
                 </div>
-                <p class="text-small text-muted mb-2">Your valid lap times compared directly against the Race Winner's laps.</p>
                 <div class="chart-container"><canvas id="chartLaps"></canvas></div>
             </div>
             <div class="col-lg-4 mb-4">
@@ -275,36 +270,28 @@
         </div>
 
         <div id="comp-results" class="d-none">
-            <div class="row mb-4" id="comp-stats-container">
-                </div>
-
+            <div class="row mb-4" id="comp-stats-container"></div>
             <div class="row">
                 <div class="col-lg-6 mb-4">
                     <h5 class="text-secondary">Race vs Qualy Positions</h5>
-                    <p class="text-small text-muted mb-2">Solid = Race | Dashed = Qualy</p>
                     <div class="chart-container"><canvas id="chartCompPos"></canvas></div>
                 </div>
                 <div class="col-lg-6 mb-4">
                     <h5 class="text-secondary">Total Time Lost to Incidents</h5>
-                    <p class="text-small text-muted mb-2">Lower is better.</p>
                     <div class="chart-container"><canvas id="chartCompInc"></canvas></div>
                 </div>
                 <div class="col-lg-12 mb-4">
                     <h5 class="text-secondary">Pace & Qualy Gap Evolution</h5>
-                    <p class="text-small text-muted mb-2">Solid = Race Pace Gap | Dashed = Qualy Gap</p>
                     <div class="chart-container" style="height: 280px;"><canvas id="chartCompGaps"></canvas></div>
                 </div>
             </div>
-
             <hr class="mb-4">
-
             <div class="row">
                 <div class="col-12 mb-4">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <h5 class="text-secondary mb-0">H2H Clean Lap Telemetry</h5>
                         <select id="compRaceSelector" class="form-select form-select-sm w-auto" onchange="renderCompTelemetry()"></select>
                     </div>
-                    <p class="text-small text-muted mb-2">Direct lap-by-lap comparison on common tracks.</p>
                     <div class="chart-container"><canvas id="chartCompLaps"></canvas></div>
                 </div>
             </div>
@@ -320,7 +307,6 @@
     let chartRacePaceInstance, chartRaceBestInstance, chartQualyGapsInstance;
     let chartGapsEvolutionInstance;
     
-    // H2H Chart Instances
     let chartCompPosInst, chartCompIncInst, chartCompGapsInst, chartCompLapsInst;
 
     let currentDriverData = null; 
@@ -434,7 +420,6 @@
         document.getElementById(`tab-${tab}`).classList.remove('d-none');
     }
 
-    // --- HALL OF FAME ---
     function renderHallOfFame() {
         const tbody = document.getElementById('table-hof');
         tbody.innerHTML = "";
@@ -468,49 +453,49 @@
         }
     }
 
-    // --- H2H COMPARISON LOGIC ---
-    function openCompareSelection() {
-        ['view-global', 'view-session', 'view-hof', 'view-driver'].forEach(v => document.getElementById(v).classList.add('d-none'));
-        document.getElementById('view-compare').classList.remove('d-none');
-        document.getElementById('comp-results').classList.add('d-none'); // Hide until compared
-        
-        // Populate Dropdowns
-        const sel1 = document.getElementById('comp-driver1');
-        const sel2 = document.getElementById('comp-driver2');
-        sel1.innerHTML = ""; sel2.innerHTML = "";
-        
-        // Sort names alphabetically
-        let drivers = [...fullData.global].sort((a,b) => a.name.localeCompare(b.name));
-        
-        drivers.forEach((d, idx) => {
-            sel1.add(new Option(d.name, d.name));
-            sel2.add(new Option(d.name, d.name));
-        });
-
-        // Set default selection to top 2 in standings if available
-        if (fullData.global.length > 1) {
-            sel1.value = fullData.global[0].name;
-            sel2.value = fullData.global[1].name;
-        }
-    }
-
     function extractDriverHistory(driverName) {
         let history = [];
         fullData.sessions.forEach(session => {
             const parts = session.name.split(':');
             const cleanTrackName = parts.length > 1 ? parts[1].trim() : session.name;
             const result = session.results.find(r => r.name === driverName);
-            if (result && result.pos !== "DNF") {
+            if (result) {
+                const winner = session.results.find(r => r.pos === 1 || r.pos === "1");
                 history.push({
                     sessionName: cleanTrackName,
-                    pos: result.pos, qualyPos: result.qualy_pos,
+                    pos: result.pos, pacePos: result.pace_pos, qualyPos: result.qualy_pos,
                     laps: result.lap_history, avgLapMs: result.avg_lap_ms,
                     gapPaceMs: result.gap_pace === "-" ? null : result.gap_pace_ms, 
-                    qualyGapMs: result.qualy_gap === "-" ? null : result.qualy_gap_ms
+                    gapBestMs: result.gap_best === "-" ? null : result.gap_best_ms, 
+                    qualyGapMs: result.qualy_gap === "-" ? null : result.qualy_gap_ms,
+                    winnerData: winner ? winner : null
                 });
             }
         });
         return history;
+    }
+
+    // --- H2H COMPARISON LOGIC ---
+    function openCompareSelection() {
+        ['view-global', 'view-session', 'view-hof', 'view-driver'].forEach(v => document.getElementById(v).classList.add('d-none'));
+        document.getElementById('view-compare').classList.remove('d-none');
+        document.getElementById('comp-results').classList.add('d-none'); 
+        
+        const sel1 = document.getElementById('comp-driver1');
+        const sel2 = document.getElementById('comp-driver2');
+        sel1.innerHTML = ""; sel2.innerHTML = "";
+        
+        let drivers = [...fullData.global].sort((a,b) => a.name.localeCompare(b.name));
+        
+        drivers.forEach(d => {
+            sel1.add(new Option(d.name, d.name));
+            sel2.add(new Option(d.name, d.name));
+        });
+
+        if (fullData.global.length > 1) {
+            sel1.value = fullData.global[0].name;
+            sel2.value = fullData.global[1].name;
+        }
     }
 
     function runComparison() {
@@ -530,21 +515,17 @@
 
         document.getElementById('comp-results').classList.remove('d-none');
 
-        // 1. Render Stats Cards
         renderCompStats(d1Stats, d2Stats);
 
-        // Extract Common Tracks for X-Axis (Union of both drivers)
         let trackSet = new Set();
         compDriver1Data.forEach(h => trackSet.add(h.sessionName));
         compDriver2Data.forEach(h => trackSet.add(h.sessionName));
         let allTracks = Array.from(trackSet);
 
-        // 2. Render Charts
         renderCompPositions(allTracks);
         renderCompIncidents(allTracks);
         renderCompGaps(allTracks);
 
-        // 3. Render Telemetry Dropdown (Intersection of both drivers)
         const commonRaces = allTracks.filter(t => 
             compDriver1Data.some(h => h.sessionName === t) && 
             compDriver2Data.some(h => h.sessionName === t)
@@ -567,16 +548,12 @@
         const container = document.getElementById('comp-stats-container');
         
         const makeCard = (title, val1, val2, reverseGood = false) => {
-            // Determine winner styling
             let v1 = parseFloat(val1); let v2 = parseFloat(val2);
             let d1Better = false; let d2Better = false;
             
             if (!isNaN(v1) && !isNaN(v2)) {
-                if (reverseGood) { // Lower is better (Positions, Gaps)
-                    d1Better = v1 < v2; d2Better = v2 < v1;
-                } else { // Higher is better (Points, Net Pos)
-                    d1Better = v1 > v2; d2Better = v2 > v1;
-                }
+                if (reverseGood) { d1Better = v1 < v2; d2Better = v2 < v1; } 
+                else { d1Better = v1 > v2; d2Better = v2 > v1; }
             }
 
             return `
@@ -609,7 +586,7 @@
 
         const getData = (driverData, field) => tracks.map(t => {
             let session = driverData.find(h => h.sessionName === t);
-            return session && session[field] !== "-" ? session[field] : null;
+            return session && session[field] !== "-" && session[field] !== "DNF" ? session[field] : null;
         });
 
         chartCompPosInst = new Chart(ctx, {
@@ -720,31 +697,18 @@
             <span class="stat-badge">⏱️ Avg Qualy Pos: P${globalStats.avg_qualy_pos}</span>
         `;
 
-        let raceHistory = [];
+        let raceHistory = extractDriverHistory(driverName);
+        
         let pbData = {}; 
-
-        fullData.sessions.forEach((session, idx) => {
+        fullData.sessions.forEach(session => {
             const parts = session.name.split(':');
             const cleanTrackName = parts.length > 1 ? parts[1].trim() : session.name;
-
             const result = session.results.find(r => r.name === driverName);
+            
             if (result) { 
                 if (!pbData[cleanTrackName]) pbData[cleanTrackName] = { qualy: Infinity, race: Infinity };
                 if (result.qualy_time_ms && result.qualy_time_ms < pbData[cleanTrackName].qualy) pbData[cleanTrackName].qualy = result.qualy_time_ms;
                 if (result.best_lap_ms && result.best_lap_ms < pbData[cleanTrackName].race) pbData[cleanTrackName].race = result.best_lap_ms;
-
-                if(result.pos !== "DNF") {
-                    const winner = session.results.find(r => r.pos === 1);
-                    raceHistory.push({
-                        sessionName: cleanTrackName, 
-                        pos: result.pos, pacePos: result.pace_pos, qualyPos: result.qualy_pos,
-                        laps: result.lap_history, avgLapMs: result.avg_lap_ms,
-                        gapPaceMs: result.gap_pace === "-" ? null : result.gap_pace_ms, 
-                        gapBestMs: result.gap_best === "-" ? null : result.gap_best_ms, 
-                        qualyGapMs: result.qualy_gap === "-" ? null : result.qualy_gap_ms,
-                        winnerData: winner ? winner : null
-                    });
-                }
             }
         });
 
@@ -784,9 +748,9 @@
             data: {
                 labels: history.map(h => h.sessionName),
                 datasets: [
-                    { label: 'Final Race Pos', data: history.map(h => h.pos), borderColor: '#0d6efd', backgroundColor: '#0d6efd', borderWidth: 3 },
-                    { label: 'Qualy Pos', data: history.map(h => h.qualyPos === "-" ? null : h.qualyPos), borderColor: '#198754', borderDash: [5, 5], borderWidth: 2 },
-                    { label: 'Pace Expected Pos', data: history.map(h => h.pacePos === "-" ? null : h.pacePos), borderColor: '#ffc107', borderDash: [2, 2], borderWidth: 2 }
+                    { label: 'Final Race Pos', data: history.map(h => h.pos === "DNF" ? null : h.pos), borderColor: '#0d6efd', backgroundColor: '#0d6efd', borderWidth: 3, spanGaps: false },
+                    { label: 'Qualy Pos', data: history.map(h => h.qualyPos === "-" ? null : h.qualyPos), borderColor: '#198754', borderDash: [5, 5], borderWidth: 2, spanGaps: false },
+                    { label: 'Pace Expected Pos', data: history.map(h => h.pacePos === "-" ? null : h.pacePos), borderColor: '#ffc107', borderDash: [2, 2], borderWidth: 2, spanGaps: false }
                 ]
             },
             options: { responsive: true, maintainAspectRatio: false, scales: { y: { reverse: true, min: 1, ticks: { stepSize: 1 } } } }
@@ -846,6 +810,7 @@
         });
     }
 
+    // AQUI ESTA LA CORRECCIÓN CLAVE
     function renderProfileRaceAnalysis() {
         const data = currentDriverData[document.getElementById('driverRaceSelector').value];
         const ctx = document.getElementById('chartLaps').getContext('2d');
@@ -922,7 +887,8 @@
         rBody.innerHTML = ""; 
         session.results.forEach(r => {
             const isGlobal = fullData.global.some(d => d.name === r.name);
-            const nameHtml = isGlobal ? `<span class="driver-link" onclick="openDriverProfile('${r.name}')">${r.name}</span>` : `<span class="text-muted fw-bold">${r.name}</span>`;
+            const penHtml = r.penalty > 0 ? `<span class="badge bg-danger rounded-pill py-0 px-1 ms-1">+${r.penalty}s</span>` : "";
+            const nameHtml = isGlobal ? `<span class="driver-link" onclick="openDriverProfile('${r.name}')">${r.name}</span>${penHtml}` : `<span class="text-muted fw-bold">${r.name}</span>${penHtml}`;
 
             const stylePace = r.gap_pace === 'PACE REF' ? `<span class="badge badge-purple">PACE REF</span>` : (r.gap_pace.includes('+') ? `<span class="gap-plus">${r.gap_pace}</span>` : r.gap_pace);
             const styleBest = r.gap_best === 'BEST LAP' ? `<span class="badge badge-purple">BEST LAP</span>` : (r.gap_best.includes('+') ? `<span class="gap-plus">${r.gap_best}</span>` : r.gap_best);

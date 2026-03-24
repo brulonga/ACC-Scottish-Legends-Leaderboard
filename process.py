@@ -2,9 +2,38 @@ import json
 import glob
 import os
 
-# --- CONFIGURATION ---
+
 MIN_LAPS_PERCENTAGE = 0.50 
 OUTPUT_FILE = "dashboard_data.json"
+
+PENALTIES = {
+    "nurburgring_24h": {
+
+    },
+    "mount_panorama": {
+       
+    },
+    "hungaroring": {
+       
+    },
+    "valencia": {
+       
+    },
+    "imola": {
+        "Just Wild": 5, 
+        "Berat Budak": 30,
+        "keVin peeters": 5
+    },
+    "zandvoort": {
+        "anthony gaben": 15,
+        "Luca Maggiolo": 20,
+        "Tom Scheidema": 20,
+        "Cla Rens": 5,
+        "Berat Budak": 15,
+        "Valentin Loose": 800,
+        "Bruno Longarela": 5
+    }
+}
 
 POINTS_SYSTEM = {
     1: 180, 2: 150, 3: 120, 4: 105, 5: 96,
@@ -32,6 +61,12 @@ def read_json(file_path):
         except (UnicodeError, json.JSONDecodeError, UnicodeDecodeError):
             continue
     return None
+
+def custom_sort_leaderboard(line):
+    # Ordenar por: Vueltas (Descendente) -> Tiempo Total (Ascendente)
+    laps = line['timing']['lapCount']
+    ttime = line['timing']['totalTime']
+    return (-laps, ttime)
 
 def load_and_process():
     global_drivers = {} 
@@ -97,6 +132,22 @@ def load_and_process():
                 "race": {"time_ms": 2000000000, "driver": "-", "car": 0, "wet": 0}
             }
 
+        # --- APLICAR PENALIZACIONES Y REORDENAR LA CARRERA ---
+        for line in race_leaderboard:
+            driver_name = f"{line['currentDriver']['firstName']} {line['currentDriver']['lastName']}".strip()
+            penalty_sec = PENALTIES.get(track_name, {}).get(driver_name, 0)
+            
+            ttime = line['timing']['totalTime']
+            if penalty_sec > 0 and ttime > 0 and ttime < 2000000000:
+                line['timing']['totalTime'] += (penalty_sec * 1000)
+                line['penalty_applied'] = penalty_sec
+            else:
+                line['penalty_applied'] = 0
+
+        # Reordenamos basándonos en los nuevos tiempos penalizados
+        race_leaderboard.sort(key=custom_sort_leaderboard)
+        # -----------------------------------------------------
+
         qualy_dict = {}
         qualy_pole_ms = 2000000000
         
@@ -115,7 +166,6 @@ def load_and_process():
 
             valid_q_pos = 1
             for line in q_leaderboard:
-                # FIX: Usar el nombre como ID único en vez del PlayerId bugeado de ACC
                 driver_name = f"{line['currentDriver']['firstName']} {line['currentDriver']['lastName']}".strip()
                 q_time = line['timing']['bestLap']
                 
@@ -184,7 +234,6 @@ def load_and_process():
             timing = line['timing']
             driver = line['currentDriver']
             
-            # FIX: Usar el nombre como ID único en vez del PlayerId bugeado de ACC
             name = f"{driver['firstName']} {driver['lastName']}".strip() 
             pid = name 
             
@@ -197,6 +246,7 @@ def load_and_process():
             laps = timing['lapCount']
             total_time = timing['totalTime']
             best_lap = timing['bestLap']
+            penalty_applied = line.get('penalty_applied', 0)
 
             is_classified = laps >= min_laps_required
 
@@ -222,7 +272,7 @@ def load_and_process():
             incidents = car_laps_data.get(car_id, {}).get('incidents', "-") if is_classified else "-"
             
             avg_lap_driver_ms = sum(valid_laps) / len(valid_laps) if valid_laps and is_classified else None
-            lap_history = car_laps_data.get(car_id, {}).get('all_laps', []) if is_classified else []
+            lap_history = car_laps_data.get(car_id, {}).get('all_laps', []) 
             
             gap_pace_str = "-"
             current_pace_gap_ms = 0
@@ -261,7 +311,8 @@ def load_and_process():
                 "has_valid_pace_gap": has_valid_pace_gap, "gap_pace": gap_pace_str,
                 "best_lap": format_time(best_lap) if is_classified and best_lap < 2000000000 else "-",
                 "best_lap_ms": best_lap if is_classified and best_lap < 2000000000 else None,
-                "gap_best": gap_best_str
+                "gap_best": gap_best_str,
+                "penalty": penalty_applied # Exportamos el penalti para el HTML
             })
 
         valid_paces = [d for d in temp_drivers if d['avg_lap_ms'] is not None and d['is_classified']]
