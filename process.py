@@ -6,33 +6,48 @@ import os
 MIN_LAPS_PERCENTAGE = 0.50 
 OUTPUT_FILE = "dashboard_data.json"
 
+
 PENALTIES = {
     "nurburgring_24h": {
+    },
+
+    "mount_panorama": {
+    },
+
+    "hungaroring": {
+    },
+
+    "valencia": {
+    },
+
+    "imola": {
+
+        "Just Wild": 5, 
+
+        "Berat Budak": 30,
+
+        "keVin peeters": 5
 
     },
-    "mount_panorama": {
-       
-    },
-    "hungaroring": {
-       
-    },
-    "valencia": {
-       
-    },
-    "imola": {
-        "Just Wild": 5, 
-        "Berat Budak": 30,
-        "keVin peeters": 5
-    },
+
     "zandvoort": {
+
         "anthony gaben": 15,
+
         "Luca Maggiolo": 20,
+
         "Tom Scheidema": 20,
+
         "Cla Rens": 5,
+
         "Berat Budak": 15,
+
         "Valentin Loose": 800,
+
         "Bruno Longarela": 5
+
     }
+
 }
 
 POINTS_SYSTEM = {
@@ -63,7 +78,6 @@ def read_json(file_path):
     return None
 
 def custom_sort_leaderboard(line):
-    # Ordenar por: Vueltas (Descendente) -> Tiempo Total (Ascendente)
     laps = line['timing']['lapCount']
     ttime = line['timing']['totalTime']
     return (-laps, ttime)
@@ -132,7 +146,7 @@ def load_and_process():
                 "race": {"time_ms": 2000000000, "driver": "-", "car": 0, "wet": 0}
             }
 
-        # --- APLICAR PENALIZACIONES Y REORDENAR LA CARRERA ---
+        # APLICAR PENALIZACIONES
         for line in race_leaderboard:
             driver_name = f"{line['currentDriver']['firstName']} {line['currentDriver']['lastName']}".strip()
             penalty_sec = PENALTIES.get(track_name, {}).get(driver_name, 0)
@@ -144,9 +158,7 @@ def load_and_process():
             else:
                 line['penalty_applied'] = 0
 
-        # Reordenamos basándonos en los nuevos tiempos penalizados
         race_leaderboard.sort(key=custom_sort_leaderboard)
-        # -----------------------------------------------------
 
         qualy_dict = {}
         qualy_pole_ms = 2000000000
@@ -230,6 +242,10 @@ def load_and_process():
         valid_pos_counter = 1 
         seen_pids = set()
         
+        # Variables para calcular el Gap
+        leader_laps = 0
+        leader_time = 0
+
         for line in race_leaderboard:
             timing = line['timing']
             driver = line['currentDriver']
@@ -250,11 +266,26 @@ def load_and_process():
 
             is_classified = laps >= min_laps_required
 
+            race_gap_str = "-"
+            
             if is_classified:
                 display_pos = valid_pos_counter
                 real_pos_num = valid_pos_counter
                 points = POINTS_SYSTEM.get(valid_pos_counter, 0)
                 
+                # CALCULAR RACE GAP (Tiempo total final vs Ganador)
+                if valid_pos_counter == 1:
+                    leader_laps = laps
+                    leader_time = total_time
+                    race_gap_str = "WINNER"
+                else:
+                    if laps == leader_laps:
+                        gap_ms = total_time - leader_time
+                        race_gap_str = f"+{gap_ms/1000:.3f}s"
+                    else:
+                        laps_behind = leader_laps - laps
+                        race_gap_str = f"+{laps_behind} Lap{'s' if laps_behind > 1 else ''}"
+
                 if best_lap < 2000000000 and best_lap < hall_of_fame[track_name]["race"]["time_ms"]:
                     hall_of_fame[track_name]["race"] = {
                         "time_ms": best_lap,
@@ -312,7 +343,8 @@ def load_and_process():
                 "best_lap": format_time(best_lap) if is_classified and best_lap < 2000000000 else "-",
                 "best_lap_ms": best_lap if is_classified and best_lap < 2000000000 else None,
                 "gap_best": gap_best_str,
-                "penalty": penalty_applied # Exportamos el penalti para el HTML
+                "penalty": penalty_applied,
+                "race_gap": race_gap_str # Pasamos el Gap de carrera calculado
             })
 
         valid_paces = [d for d in temp_drivers if d['avg_lap_ms'] is not None and d['is_classified']]

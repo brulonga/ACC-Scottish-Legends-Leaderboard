@@ -774,6 +774,7 @@
           "best_lap_ms": 500485,
           "gap_best": "+0.660",
           "penalty": 0,
+          "race_gap": "WINNER",
           "pace_pos": 4
         },
         {
@@ -844,6 +845,7 @@
           "best_lap_ms": 499825,
           "gap_best": "BEST LAP",
           "penalty": 0,
+          "race_gap": "+74.686s",
           "pace_pos": 2
         },
         {
@@ -914,6 +916,7 @@
           "best_lap_ms": 504542,
           "gap_best": "+4.717",
           "penalty": 0,
+          "race_gap": "+95.814s",
           "pace_pos": 1
         },
         {
@@ -984,6 +987,7 @@
           "best_lap_ms": 500092,
           "gap_best": "+0.267",
           "penalty": 0,
+          "race_gap": "+99.121s",
           "pace_pos": 3
         },
         {
@@ -1054,6 +1058,7 @@
           "best_lap_ms": 506365,
           "gap_best": "+6.540",
           "penalty": 0,
+          "race_gap": "+254.509s",
           "pace_pos": 9
         },
         {
@@ -1124,6 +1129,7 @@
           "best_lap_ms": 512115,
           "gap_best": "+12.290",
           "penalty": 0,
+          "race_gap": "+282.228s",
           "pace_pos": 12
         },
         {
@@ -1194,6 +1200,7 @@
           "best_lap_ms": 506162,
           "gap_best": "+6.337",
           "penalty": 0,
+          "race_gap": "+333.754s",
           "pace_pos": 6
         },
         {
@@ -1264,6 +1271,7 @@
           "best_lap_ms": 510967,
           "gap_best": "+11.142",
           "penalty": 0,
+          "race_gap": "+408.217s",
           "pace_pos": 7
         },
         {
@@ -1334,6 +1342,7 @@
           "best_lap_ms": 513822,
           "gap_best": "+13.997",
           "penalty": 0,
+          "race_gap": "+452.680s",
           "pace_pos": 5
         },
         {
@@ -1400,6 +1409,7 @@
           "best_lap_ms": 514835,
           "gap_best": "+15.010",
           "penalty": 0,
+          "race_gap": "+1 Lap",
           "pace_pos": 10
         },
         {
@@ -1466,6 +1476,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "+1 Lap",
           "pace_pos": 13
         },
         {
@@ -1528,6 +1539,7 @@
           "best_lap_ms": 534112,
           "gap_best": "+34.287",
           "penalty": 0,
+          "race_gap": "+2 Laps",
           "pace_pos": 8
         },
         {
@@ -1582,6 +1594,7 @@
           "best_lap_ms": 505602,
           "gap_best": "+5.777",
           "penalty": 0,
+          "race_gap": "+4 Laps",
           "pace_pos": 11
         },
         {
@@ -1628,6 +1641,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -1670,6 +1684,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -1708,6 +1723,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -1746,6 +1762,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -1784,6 +1801,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -1818,6 +1836,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -1852,6 +1871,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -1882,6 +1902,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -1912,6 +1933,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -1937,6 +1959,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -1962,6 +1985,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -1987,6 +2011,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2012,6 +2037,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2037,6 +2063,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2062,6 +2089,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2087,6 +2115,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2112,6 +2141,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2137,6 +2167,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2162,6 +2193,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2187,6 +2219,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2212,6 +2245,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2237,6 +2271,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2262,6 +2297,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2287,6 +2323,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2312,6 +2349,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2337,6 +2375,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2362,6 +2401,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2387,6 +2427,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2412,6 +2453,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2437,6 +2479,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2462,6 +2505,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2487,6 +2531,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2512,6 +2557,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2537,6 +2583,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2562,6 +2609,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2587,6 +2635,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2612,6 +2661,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2637,6 +2687,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2662,6 +2713,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2687,6 +2739,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2712,6 +2765,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2737,6 +2791,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2762,6 +2817,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2787,6 +2843,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2812,6 +2869,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2837,6 +2895,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2862,6 +2921,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2887,6 +2947,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2912,6 +2973,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2937,6 +2999,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2962,6 +3025,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -2987,6 +3051,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3012,6 +3077,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3037,6 +3103,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3062,6 +3129,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3087,6 +3155,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3112,6 +3181,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3137,6 +3207,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3162,6 +3233,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3187,6 +3259,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3212,6 +3285,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3237,6 +3311,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3262,6 +3337,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3287,6 +3363,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3312,6 +3389,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3337,6 +3415,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3362,6 +3441,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3387,6 +3467,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3412,6 +3493,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3437,6 +3519,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3462,6 +3545,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3487,6 +3571,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3512,6 +3597,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3537,6 +3623,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3562,6 +3649,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3587,6 +3675,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3612,6 +3701,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3637,6 +3727,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3662,6 +3753,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3687,6 +3779,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -3712,6 +3805,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         }
       ],
@@ -4042,6 +4136,7 @@
           "best_lap_ms": 122385,
           "gap_best": "+0.358",
           "penalty": 0,
+          "race_gap": "WINNER",
           "pace_pos": 1
         },
         {
@@ -4244,6 +4339,7 @@
           "best_lap_ms": 122027,
           "gap_best": "BEST LAP",
           "penalty": 0,
+          "race_gap": "+26.169s",
           "pace_pos": 2
         },
         {
@@ -4442,6 +4538,7 @@
           "best_lap_ms": 124602,
           "gap_best": "+2.575",
           "penalty": 0,
+          "race_gap": "+1 Lap",
           "pace_pos": 7
         },
         {
@@ -4636,6 +4733,7 @@
           "best_lap_ms": 123950,
           "gap_best": "+1.923",
           "penalty": 0,
+          "race_gap": "+2 Laps",
           "pace_pos": 4
         },
         {
@@ -4830,6 +4928,7 @@
           "best_lap_ms": 123825,
           "gap_best": "+1.798",
           "penalty": 0,
+          "race_gap": "+2 Laps",
           "pace_pos": 6
         },
         {
@@ -5020,6 +5119,7 @@
           "best_lap_ms": 124317,
           "gap_best": "+2.290",
           "penalty": 0,
+          "race_gap": "+3 Laps",
           "pace_pos": 8
         },
         {
@@ -5206,6 +5306,7 @@
           "best_lap_ms": 124765,
           "gap_best": "+2.738",
           "penalty": 0,
+          "race_gap": "+4 Laps",
           "pace_pos": 9
         },
         {
@@ -5384,6 +5485,7 @@
           "best_lap_ms": 123020,
           "gap_best": "+0.993",
           "penalty": 0,
+          "race_gap": "+6 Laps",
           "pace_pos": 5
         },
         {
@@ -5558,6 +5660,7 @@
           "best_lap_ms": 123147,
           "gap_best": "+1.120",
           "penalty": 0,
+          "race_gap": "+7 Laps",
           "pace_pos": 3
         },
         {
@@ -5724,6 +5827,7 @@
           "best_lap_ms": 125832,
           "gap_best": "+3.805",
           "penalty": 0,
+          "race_gap": "+9 Laps",
           "pace_pos": 10
         },
         {
@@ -5822,6 +5926,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -5908,6 +6013,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -5990,6 +6096,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6068,6 +6175,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6138,6 +6246,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6196,6 +6305,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6246,6 +6356,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6288,6 +6399,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6326,6 +6438,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6364,6 +6477,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6398,6 +6512,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6432,6 +6547,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6466,6 +6582,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6496,6 +6613,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6526,6 +6644,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6551,6 +6670,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6576,6 +6696,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6601,6 +6722,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6626,6 +6748,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6651,6 +6774,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6676,6 +6800,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6701,6 +6826,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6726,6 +6852,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6751,6 +6878,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6776,6 +6904,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6801,6 +6930,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6826,6 +6956,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6851,6 +6982,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6876,6 +7008,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6901,6 +7034,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6926,6 +7060,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6951,6 +7086,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -6976,6 +7112,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7001,6 +7138,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7026,6 +7164,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7051,6 +7190,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7076,6 +7216,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7101,6 +7242,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7126,6 +7268,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7151,6 +7294,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7176,6 +7320,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7201,6 +7346,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7226,6 +7372,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7251,6 +7398,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7276,6 +7424,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7301,6 +7450,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7326,6 +7476,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7351,6 +7502,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7376,6 +7528,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -7401,6 +7554,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         }
       ],
@@ -7795,6 +7949,7 @@
           "best_lap_ms": 103827,
           "gap_best": "BEST LAP",
           "penalty": 0,
+          "race_gap": "WINNER",
           "pace_pos": 1
         },
         {
@@ -8029,6 +8184,7 @@
           "best_lap_ms": 104982,
           "gap_best": "+1.155",
           "penalty": 0,
+          "race_gap": "+82.913s",
           "pace_pos": 2
         },
         {
@@ -8259,6 +8415,7 @@
           "best_lap_ms": 105365,
           "gap_best": "+1.538",
           "penalty": 0,
+          "race_gap": "+1 Lap",
           "pace_pos": 4
         },
         {
@@ -8489,6 +8646,7 @@
           "best_lap_ms": 104975,
           "gap_best": "+1.148",
           "penalty": 0,
+          "race_gap": "+1 Lap",
           "pace_pos": 3
         },
         {
@@ -8719,6 +8877,7 @@
           "best_lap_ms": 105420,
           "gap_best": "+1.593",
           "penalty": 0,
+          "race_gap": "+1 Lap",
           "pace_pos": 5
         },
         {
@@ -8945,6 +9104,7 @@
           "best_lap_ms": 106525,
           "gap_best": "+2.698",
           "penalty": 0,
+          "race_gap": "+2 Laps",
           "pace_pos": 6
         },
         {
@@ -9171,6 +9331,7 @@
           "best_lap_ms": 108995,
           "gap_best": "+5.168",
           "penalty": 0,
+          "race_gap": "+2 Laps",
           "pace_pos": 7
         },
         {
@@ -9277,6 +9438,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -9351,6 +9513,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -9389,6 +9552,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -9427,6 +9591,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -9452,6 +9617,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -9477,6 +9643,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -9502,6 +9669,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -9527,6 +9695,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -9552,6 +9721,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -9577,6 +9747,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -9602,6 +9773,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -9627,6 +9799,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -9652,6 +9825,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         }
       ],
@@ -9998,6 +10172,7 @@
           "best_lap_ms": 91495,
           "gap_best": "BEST LAP",
           "penalty": 0,
+          "race_gap": "WINNER",
           "pace_pos": 1
         },
         {
@@ -10256,6 +10431,7 @@
           "best_lap_ms": 92302,
           "gap_best": "+0.807",
           "penalty": 0,
+          "race_gap": "+31.489s",
           "pace_pos": 3
         },
         {
@@ -10514,6 +10690,7 @@
           "best_lap_ms": 92060,
           "gap_best": "+0.565",
           "penalty": 0,
+          "race_gap": "+42.286s",
           "pace_pos": 5
         },
         {
@@ -10772,6 +10949,7 @@
           "best_lap_ms": 92707,
           "gap_best": "+1.212",
           "penalty": 0,
+          "race_gap": "+72.024s",
           "pace_pos": 6
         },
         {
@@ -11026,6 +11204,7 @@
           "best_lap_ms": 93965,
           "gap_best": "+2.470",
           "penalty": 0,
+          "race_gap": "+1 Lap",
           "pace_pos": 12
         },
         {
@@ -11276,6 +11455,7 @@
           "best_lap_ms": 92817,
           "gap_best": "+1.322",
           "penalty": 0,
+          "race_gap": "+2 Laps",
           "pace_pos": 8
         },
         {
@@ -11522,6 +11702,7 @@
           "best_lap_ms": 93370,
           "gap_best": "+1.875",
           "penalty": 0,
+          "race_gap": "+3 Laps",
           "pace_pos": 9
         },
         {
@@ -11768,6 +11949,7 @@
           "best_lap_ms": 94290,
           "gap_best": "+2.795",
           "penalty": 0,
+          "race_gap": "+3 Laps",
           "pace_pos": 13
         },
         {
@@ -11994,6 +12176,7 @@
           "best_lap_ms": 91712,
           "gap_best": "+0.217",
           "penalty": 0,
+          "race_gap": "+8 Laps",
           "pace_pos": 4
         },
         {
@@ -12196,6 +12379,7 @@
           "best_lap_ms": 99237,
           "gap_best": "+7.742",
           "penalty": 0,
+          "race_gap": "+14 Laps",
           "pace_pos": "-"
         },
         {
@@ -12382,6 +12566,7 @@
           "best_lap_ms": 92827,
           "gap_best": "+1.332",
           "penalty": 0,
+          "race_gap": "+18 Laps",
           "pace_pos": 7
         },
         {
@@ -12544,6 +12729,7 @@
           "best_lap_ms": 93520,
           "gap_best": "+2.025",
           "penalty": 0,
+          "race_gap": "+24 Laps",
           "pace_pos": 10
         },
         {
@@ -12706,6 +12892,7 @@
           "best_lap_ms": 91680,
           "gap_best": "+0.185",
           "penalty": 0,
+          "race_gap": "+24 Laps",
           "pace_pos": 2
         },
         {
@@ -12856,6 +13043,7 @@
           "best_lap_ms": 93820,
           "gap_best": "+2.325",
           "penalty": 0,
+          "race_gap": "+27 Laps",
           "pace_pos": 11
         },
         {
@@ -12998,6 +13186,7 @@
           "best_lap_ms": 96777,
           "gap_best": "+5.282",
           "penalty": 0,
+          "race_gap": "+29 Laps",
           "pace_pos": 15
         },
         {
@@ -13140,6 +13329,7 @@
           "best_lap_ms": 94640,
           "gap_best": "+3.145",
           "penalty": 0,
+          "race_gap": "+29 Laps",
           "pace_pos": 14
         },
         {
@@ -13254,6 +13444,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13344,6 +13535,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13430,6 +13622,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13496,6 +13689,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13550,6 +13744,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13596,6 +13791,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13634,6 +13830,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13672,6 +13869,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13697,6 +13895,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13722,6 +13921,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13747,6 +13947,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13772,6 +13973,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13797,6 +13999,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13822,6 +14025,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13847,6 +14051,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13872,6 +14077,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13897,6 +14103,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13922,6 +14129,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13947,6 +14155,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13972,6 +14181,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -13997,6 +14207,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -14022,6 +14233,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -14047,6 +14259,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -14072,6 +14285,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -14097,6 +14311,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -14122,6 +14337,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -14147,6 +14363,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -14172,6 +14389,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -14197,6 +14415,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -14222,6 +14441,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -14247,6 +14467,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -14272,6 +14493,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -14297,6 +14519,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -14322,6 +14545,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -14347,6 +14571,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         }
       ],
@@ -14769,6 +14994,7 @@
           "best_lap_ms": 101342,
           "gap_best": "BEST LAP",
           "penalty": 0,
+          "race_gap": "WINNER",
           "pace_pos": 1
         },
         {
@@ -15007,6 +15233,7 @@
           "best_lap_ms": 101952,
           "gap_best": "+0.610",
           "penalty": 0,
+          "race_gap": "+45.322s",
           "pace_pos": 2
         },
         {
@@ -15245,6 +15472,7 @@
           "best_lap_ms": 102257,
           "gap_best": "+0.915",
           "penalty": 0,
+          "race_gap": "+55.717s",
           "pace_pos": 5
         },
         {
@@ -15483,6 +15711,7 @@
           "best_lap_ms": 102355,
           "gap_best": "+1.013",
           "penalty": 0,
+          "race_gap": "+62.361s",
           "pace_pos": 4
         },
         {
@@ -15721,6 +15950,7 @@
           "best_lap_ms": 101505,
           "gap_best": "+0.163",
           "penalty": 0,
+          "race_gap": "+66.616s",
           "pace_pos": 3
         },
         {
@@ -15959,6 +16189,7 @@
           "best_lap_ms": 102467,
           "gap_best": "+1.125",
           "penalty": 0,
+          "race_gap": "+87.413s",
           "pace_pos": 8
         },
         {
@@ -16197,6 +16428,7 @@
           "best_lap_ms": 102452,
           "gap_best": "+1.110",
           "penalty": 0,
+          "race_gap": "+88.407s",
           "pace_pos": 9
         },
         {
@@ -16431,6 +16663,7 @@
           "best_lap_ms": 102982,
           "gap_best": "+1.640",
           "penalty": 0,
+          "race_gap": "+1 Lap",
           "pace_pos": 13
         },
         {
@@ -16665,6 +16898,7 @@
           "best_lap_ms": 102280,
           "gap_best": "+0.938",
           "penalty": 0,
+          "race_gap": "+1 Lap",
           "pace_pos": 7
         },
         {
@@ -16895,6 +17129,7 @@
           "best_lap_ms": 103182,
           "gap_best": "+1.840",
           "penalty": 30,
+          "race_gap": "+2 Laps",
           "pace_pos": 14
         },
         {
@@ -17121,6 +17356,7 @@
           "best_lap_ms": 103832,
           "gap_best": "+2.490",
           "penalty": 0,
+          "race_gap": "+3 Laps",
           "pace_pos": 17
         },
         {
@@ -17347,6 +17583,7 @@
           "best_lap_ms": 102597,
           "gap_best": "+1.255",
           "penalty": 0,
+          "race_gap": "+3 Laps",
           "pace_pos": 10
         },
         {
@@ -17569,6 +17806,7 @@
           "best_lap_ms": 102272,
           "gap_best": "+0.930",
           "penalty": 0,
+          "race_gap": "+4 Laps",
           "pace_pos": 11
         },
         {
@@ -17767,6 +18005,7 @@
           "best_lap_ms": 101897,
           "gap_best": "+0.555",
           "penalty": 5,
+          "race_gap": "+10 Laps",
           "pace_pos": 6
         },
         {
@@ -17945,6 +18184,7 @@
           "best_lap_ms": 104010,
           "gap_best": "+2.668",
           "penalty": 0,
+          "race_gap": "+15 Laps",
           "pace_pos": 15
         },
         {
@@ -18083,6 +18323,7 @@
           "best_lap_ms": 102775,
           "gap_best": "+1.433",
           "penalty": 0,
+          "race_gap": "+25 Laps",
           "pace_pos": 12
         },
         {
@@ -18221,6 +18462,7 @@
           "best_lap_ms": 104262,
           "gap_best": "+2.920",
           "penalty": 0,
+          "race_gap": "+25 Laps",
           "pace_pos": 16
         },
         {
@@ -18351,6 +18593,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -18473,6 +18716,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -18567,6 +18811,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -18633,6 +18878,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -18699,6 +18945,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -18757,6 +19004,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 5,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -18803,6 +19051,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -18841,6 +19090,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -18879,6 +19129,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -18913,6 +19164,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -18938,6 +19190,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -18963,6 +19216,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -18988,6 +19242,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19013,6 +19268,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19038,6 +19294,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19063,6 +19320,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19088,6 +19346,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19113,6 +19372,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19138,6 +19398,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19163,6 +19424,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19188,6 +19450,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19213,6 +19476,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19238,6 +19502,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19263,6 +19528,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19288,6 +19554,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19313,6 +19580,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19338,6 +19606,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19363,6 +19632,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19388,6 +19658,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19413,6 +19684,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19438,6 +19710,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19463,6 +19736,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19488,6 +19762,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19513,6 +19788,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19538,6 +19814,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19563,6 +19840,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19588,6 +19866,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19613,6 +19892,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -19638,6 +19918,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         }
       ],
@@ -20096,6 +20377,7 @@
           "best_lap_ms": 95182,
           "gap_best": "BEST LAP",
           "penalty": 0,
+          "race_gap": "WINNER",
           "pace_pos": 1
         },
         {
@@ -20342,6 +20624,7 @@
           "best_lap_ms": 96950,
           "gap_best": "+1.768",
           "penalty": 0,
+          "race_gap": "+1 Lap",
           "pace_pos": 5
         },
         {
@@ -20588,6 +20871,7 @@
           "best_lap_ms": 97100,
           "gap_best": "+1.918",
           "penalty": 0,
+          "race_gap": "+1 Lap",
           "pace_pos": 6
         },
         {
@@ -20834,6 +21118,7 @@
           "best_lap_ms": 96350,
           "gap_best": "+1.168",
           "penalty": 15,
+          "race_gap": "+1 Lap",
           "pace_pos": 7
         },
         {
@@ -21080,6 +21365,7 @@
           "best_lap_ms": 96235,
           "gap_best": "+1.053",
           "penalty": 5,
+          "race_gap": "+1 Lap",
           "pace_pos": 4
         },
         {
@@ -21326,6 +21612,7 @@
           "best_lap_ms": 96322,
           "gap_best": "+1.140",
           "penalty": 20,
+          "race_gap": "+1 Lap",
           "pace_pos": 2
         },
         {
@@ -21572,6 +21859,7 @@
           "best_lap_ms": 96515,
           "gap_best": "+1.333",
           "penalty": 0,
+          "race_gap": "+1 Lap",
           "pace_pos": 8
         },
         {
@@ -21814,6 +22102,7 @@
           "best_lap_ms": 97892,
           "gap_best": "+2.710",
           "penalty": 0,
+          "race_gap": "+2 Laps",
           "pace_pos": 12
         },
         {
@@ -22056,6 +22345,7 @@
           "best_lap_ms": 97802,
           "gap_best": "+2.620",
           "penalty": 0,
+          "race_gap": "+2 Laps",
           "pace_pos": 13
         },
         {
@@ -22294,6 +22584,7 @@
           "best_lap_ms": 97132,
           "gap_best": "+1.950",
           "penalty": 0,
+          "race_gap": "+3 Laps",
           "pace_pos": 10
         },
         {
@@ -22524,6 +22815,7 @@
           "best_lap_ms": 97545,
           "gap_best": "+2.363",
           "penalty": 0,
+          "race_gap": "+5 Laps",
           "pace_pos": 11
         },
         {
@@ -22754,6 +23046,7 @@
           "best_lap_ms": 97667,
           "gap_best": "+2.485",
           "penalty": 0,
+          "race_gap": "+5 Laps",
           "pace_pos": 14
         },
         {
@@ -22984,6 +23277,7 @@
           "best_lap_ms": 98192,
           "gap_best": "+3.010",
           "penalty": 0,
+          "race_gap": "+5 Laps",
           "pace_pos": 15
         },
         {
@@ -23190,6 +23484,7 @@
           "best_lap_ms": 99392,
           "gap_best": "+4.210",
           "penalty": 0,
+          "race_gap": "+11 Laps",
           "pace_pos": 16
         },
         {
@@ -23372,6 +23667,7 @@
           "best_lap_ms": 96455,
           "gap_best": "+1.273",
           "penalty": 5,
+          "race_gap": "+17 Laps",
           "pace_pos": 3
         },
         {
@@ -23510,6 +23806,7 @@
           "best_lap_ms": 96755,
           "gap_best": "+1.573",
           "penalty": 0,
+          "race_gap": "+28 Laps",
           "pace_pos": 9
         },
         {
@@ -23620,6 +23917,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 15,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -23718,6 +24016,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -23812,6 +24111,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -23886,6 +24186,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -23952,6 +24253,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 20,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24018,6 +24320,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 800,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24080,6 +24383,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24118,6 +24422,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24148,6 +24453,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24173,6 +24479,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24198,6 +24505,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24223,6 +24531,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24248,6 +24557,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24273,6 +24583,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24298,6 +24609,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24323,6 +24635,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24348,6 +24661,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24373,6 +24687,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24398,6 +24713,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24423,6 +24739,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24448,6 +24765,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24473,6 +24791,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24498,6 +24817,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24523,6 +24843,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24548,6 +24869,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24573,6 +24895,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24598,6 +24921,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24623,6 +24947,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24648,6 +24973,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24673,6 +24999,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24698,6 +25025,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24723,6 +25051,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24748,6 +25077,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24773,6 +25103,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24798,6 +25129,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24823,6 +25155,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24848,6 +25181,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24873,6 +25207,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24898,6 +25233,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24923,6 +25259,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24948,6 +25285,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24973,6 +25311,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -24998,6 +25337,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -25023,6 +25363,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -25048,6 +25389,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -25073,6 +25415,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -25098,6 +25441,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -25123,6 +25467,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -25148,6 +25493,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -25173,6 +25519,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -25198,6 +25545,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         },
         {
@@ -25223,6 +25571,7 @@
           "best_lap_ms": null,
           "gap_best": "-",
           "penalty": 0,
+          "race_gap": "-",
           "pace_pos": "-"
         }
       ],
