@@ -113,6 +113,20 @@
       "races": 2
     },
     {
+      "name": "Cla Rens [SL]",
+      "favorite_car": 30,
+      "points": 303,
+      "avg_points": 101.0,
+      "avg_pos": 5.0,
+      "avg_pace_pos": 4.7,
+      "net_pos_gained": -1,
+      "avg_qualy_pos": 8.7,
+      "avg_qualy_gap": "+1.257",
+      "net_pos_gained_qualy": 11,
+      "avg_gap": "+1.494",
+      "races": 3
+    },
+    {
       "name": "Kai Weber [RRT]",
       "favorite_car": 34,
       "points": 297,
@@ -124,20 +138,6 @@
       "avg_qualy_gap": "+2.277",
       "net_pos_gained_qualy": 18,
       "avg_gap": "+1.369",
-      "races": 3
-    },
-    {
-      "name": "Cla Rens",
-      "favorite_car": 30,
-      "points": 294,
-      "avg_points": 98.0,
-      "avg_pos": 5.3,
-      "avg_pace_pos": 4.7,
-      "net_pos_gained": -2,
-      "avg_qualy_pos": 8.7,
-      "avg_qualy_gap": "+1.257",
-      "net_pos_gained_qualy": 10,
-      "avg_gap": "+1.494",
       "races": 3
     },
     {
@@ -241,14 +241,14 @@
     {
       "name": "Berat Budak",
       "favorite_car": 30,
-      "points": 171,
-      "avg_points": 85.5,
-      "avg_pos": 7.0,
+      "points": 162,
+      "avg_points": 81.0,
+      "avg_pos": 7.5,
       "avg_pace_pos": 10.5,
-      "net_pos_gained": 7,
+      "net_pos_gained": 6,
       "avg_qualy_pos": 13.5,
       "avg_qualy_gap": "+1.829",
-      "net_pos_gained_qualy": 13,
+      "net_pos_gained_qualy": 12,
       "avg_gap": "+2.338",
       "races": 2
     },
@@ -21100,15 +21100,262 @@
         },
         {
           "pos": 4,
+          "qualy_pos": 12,
+          "qualy_time": "1:36.667",
+          "qualy_time_ms": 96667,
+          "qualy_gap": "+1.712",
+          "qualy_gap_ms": 1712,
+          "net_vs_q": 8,
+          "name": "Cla Rens [SL]",
+          "car_model": 35,
+          "points": 105,
+          "laps": 55,
+          "incidents": 6,
+          "avg_time": "1:37.577",
+          "avg_lap_ms": 97577.40816326531,
+          "lap_history": [
+            {
+              "time_ms": 104232,
+              "is_incident": true
+            },
+            {
+              "time_ms": 101520,
+              "is_incident": false
+            },
+            {
+              "time_ms": 99425,
+              "is_incident": false
+            },
+            {
+              "time_ms": 96235,
+              "is_incident": false
+            },
+            {
+              "time_ms": 96487,
+              "is_incident": false
+            },
+            {
+              "time_ms": 96362,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97242,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97232,
+              "is_incident": false
+            },
+            {
+              "time_ms": 98235,
+              "is_incident": false
+            },
+            {
+              "time_ms": 96997,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97005,
+              "is_incident": false
+            },
+            {
+              "time_ms": 96915,
+              "is_incident": false
+            },
+            {
+              "time_ms": 96730,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97822,
+              "is_incident": false
+            },
+            {
+              "time_ms": 96805,
+              "is_incident": false
+            },
+            {
+              "time_ms": 96457,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97617,
+              "is_incident": false
+            },
+            {
+              "time_ms": 98020,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97422,
+              "is_incident": false
+            },
+            {
+              "time_ms": 98715,
+              "is_incident": false
+            },
+            {
+              "time_ms": 105505,
+              "is_incident": true
+            },
+            {
+              "time_ms": 98655,
+              "is_incident": false
+            },
+            {
+              "time_ms": 99052,
+              "is_incident": false
+            },
+            {
+              "time_ms": 104915,
+              "is_incident": true
+            },
+            {
+              "time_ms": 168195,
+              "is_incident": true
+            },
+            {
+              "time_ms": 96370,
+              "is_incident": false
+            },
+            {
+              "time_ms": 96472,
+              "is_incident": false
+            },
+            {
+              "time_ms": 96272,
+              "is_incident": false
+            },
+            {
+              "time_ms": 96812,
+              "is_incident": false
+            },
+            {
+              "time_ms": 109362,
+              "is_incident": true
+            },
+            {
+              "time_ms": 96927,
+              "is_incident": false
+            },
+            {
+              "time_ms": 96657,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97170,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97242,
+              "is_incident": false
+            },
+            {
+              "time_ms": 96682,
+              "is_incident": false
+            },
+            {
+              "time_ms": 96895,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97000,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97180,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97387,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97612,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97620,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97360,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97982,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97427,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102525,
+              "is_incident": true
+            },
+            {
+              "time_ms": 98060,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97905,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97930,
+              "is_incident": false
+            },
+            {
+              "time_ms": 98385,
+              "is_incident": false
+            },
+            {
+              "time_ms": 98927,
+              "is_incident": false
+            },
+            {
+              "time_ms": 97817,
+              "is_incident": false
+            },
+            {
+              "time_ms": 98465,
+              "is_incident": false
+            },
+            {
+              "time_ms": 98725,
+              "is_incident": false
+            },
+            {
+              "time_ms": 98317,
+              "is_incident": false
+            },
+            {
+              "time_ms": 98745,
+              "is_incident": false
+            }
+          ],
+          "gap_pace_ms": 1686.7044595616026,
+          "gap_best_ms": 1053,
+          "gap_pace": "+1.687",
+          "best_lap": "1:36.235",
+          "best_lap_ms": 96235,
+          "gap_best": "+1.053",
+          "penalty": 0,
+          "race_gap": "+1 Lap",
+          "pace_pos": 4
+        },
+        {
+          "pos": 5,
           "qualy_pos": 9,
           "qualy_time": "1:36.280",
           "qualy_time_ms": 96280,
           "qualy_gap": "+1.325",
           "qualy_gap_ms": 1325,
-          "net_vs_q": 5,
+          "net_vs_q": 4,
           "name": "Berat Budak",
           "car_model": 30,
-          "points": 105,
+          "points": 96,
           "laps": 55,
           "incidents": 4,
           "avg_time": "1:37.942",
@@ -21344,253 +21591,6 @@
           "penalty": 15,
           "race_gap": "+1 Lap",
           "pace_pos": 7
-        },
-        {
-          "pos": 5,
-          "qualy_pos": 12,
-          "qualy_time": "1:36.667",
-          "qualy_time_ms": 96667,
-          "qualy_gap": "+1.712",
-          "qualy_gap_ms": 1712,
-          "net_vs_q": 7,
-          "name": "Cla Rens",
-          "car_model": 35,
-          "points": 96,
-          "laps": 55,
-          "incidents": 6,
-          "avg_time": "1:37.577",
-          "avg_lap_ms": 97577.40816326531,
-          "lap_history": [
-            {
-              "time_ms": 104232,
-              "is_incident": true
-            },
-            {
-              "time_ms": 101520,
-              "is_incident": false
-            },
-            {
-              "time_ms": 99425,
-              "is_incident": false
-            },
-            {
-              "time_ms": 96235,
-              "is_incident": false
-            },
-            {
-              "time_ms": 96487,
-              "is_incident": false
-            },
-            {
-              "time_ms": 96362,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97242,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97232,
-              "is_incident": false
-            },
-            {
-              "time_ms": 98235,
-              "is_incident": false
-            },
-            {
-              "time_ms": 96997,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97005,
-              "is_incident": false
-            },
-            {
-              "time_ms": 96915,
-              "is_incident": false
-            },
-            {
-              "time_ms": 96730,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97822,
-              "is_incident": false
-            },
-            {
-              "time_ms": 96805,
-              "is_incident": false
-            },
-            {
-              "time_ms": 96457,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97617,
-              "is_incident": false
-            },
-            {
-              "time_ms": 98020,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97422,
-              "is_incident": false
-            },
-            {
-              "time_ms": 98715,
-              "is_incident": false
-            },
-            {
-              "time_ms": 105505,
-              "is_incident": true
-            },
-            {
-              "time_ms": 98655,
-              "is_incident": false
-            },
-            {
-              "time_ms": 99052,
-              "is_incident": false
-            },
-            {
-              "time_ms": 104915,
-              "is_incident": true
-            },
-            {
-              "time_ms": 168195,
-              "is_incident": true
-            },
-            {
-              "time_ms": 96370,
-              "is_incident": false
-            },
-            {
-              "time_ms": 96472,
-              "is_incident": false
-            },
-            {
-              "time_ms": 96272,
-              "is_incident": false
-            },
-            {
-              "time_ms": 96812,
-              "is_incident": false
-            },
-            {
-              "time_ms": 109362,
-              "is_incident": true
-            },
-            {
-              "time_ms": 96927,
-              "is_incident": false
-            },
-            {
-              "time_ms": 96657,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97170,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97242,
-              "is_incident": false
-            },
-            {
-              "time_ms": 96682,
-              "is_incident": false
-            },
-            {
-              "time_ms": 96895,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97000,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97180,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97387,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97612,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97620,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97360,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97982,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97427,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102525,
-              "is_incident": true
-            },
-            {
-              "time_ms": 98060,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97905,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97930,
-              "is_incident": false
-            },
-            {
-              "time_ms": 98385,
-              "is_incident": false
-            },
-            {
-              "time_ms": 98927,
-              "is_incident": false
-            },
-            {
-              "time_ms": 97817,
-              "is_incident": false
-            },
-            {
-              "time_ms": 98465,
-              "is_incident": false
-            },
-            {
-              "time_ms": 98725,
-              "is_incident": false
-            },
-            {
-              "time_ms": 98317,
-              "is_incident": false
-            },
-            {
-              "time_ms": 98745,
-              "is_incident": false
-            }
-          ],
-          "gap_pace_ms": 1686.7044595616026,
-          "gap_best_ms": 1053,
-          "gap_pace": "+1.687",
-          "best_lap": "1:36.235",
-          "best_lap_ms": 96235,
-          "gap_best": "+1.053",
-          "penalty": 5,
-          "race_gap": "+1 Lap",
-          "pace_pos": 4
         },
         {
           "pos": 6,
@@ -25890,7 +25890,7 @@
         },
         {
           "pos": 12,
-          "name": "Cla Rens",
+          "name": "Cla Rens [SL]",
           "car_model": 35,
           "best_lap": "1:36.667",
           "gap_pole": "+1.712",
@@ -26548,7 +26548,7 @@
           "qualy_gap": "+1.005",
           "qualy_gap_ms": 1005,
           "net_vs_q": 6,
-          "name": "Cla Rens",
+          "name": "Cla Rens [SL]",
           "car_model": 30,
           "points": 120,
           "laps": 60,
@@ -30801,7 +30801,7 @@
         },
         {
           "pos": 9,
-          "name": "Cla Rens",
+          "name": "Cla Rens [SL]",
           "car_model": 30,
           "best_lap": "1:28.840",
           "gap_pole": "+1.005",
@@ -32154,7 +32154,7 @@
           "qualy_gap": "+1.053",
           "qualy_gap_ms": 1053,
           "net_vs_q": -3,
-          "name": "Cla Rens",
+          "name": "Cla Rens [SL]",
           "car_model": 30,
           "points": 78,
           "laps": 36,
@@ -35392,7 +35392,7 @@
         },
         {
           "pos": 5,
-          "name": "Cla Rens",
+          "name": "Cla Rens [SL]",
           "car_model": 30,
           "best_lap": "2:29.015",
           "gap_pole": "+1.053",
