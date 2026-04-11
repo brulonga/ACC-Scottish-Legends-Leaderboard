@@ -309,6 +309,20 @@
       "races": 1
     },
     {
+      "name": "Gael Duch\u00eane ESP [SL]",
+      "favorite_car": 30,
+      "points": 111,
+      "avg_points": 55.5,
+      "avg_pos": 13.0,
+      "avg_pace_pos": 16.5,
+      "net_pos_gained": 7,
+      "avg_qualy_pos": 23.5,
+      "avg_qualy_gap": "+4.746",
+      "net_pos_gained_qualy": 21,
+      "avg_gap": "+5.797",
+      "races": 2
+    },
+    {
       "name": "Kevin Kerp",
       "favorite_car": 32,
       "points": 105,
@@ -586,20 +600,6 @@
       "avg_qualy_gap": "+2.873",
       "net_pos_gained_qualy": 3,
       "avg_gap": "+4.186",
-      "races": 1
-    },
-    {
-      "name": "Gael Duch\u00eane ESP [SL]",
-      "favorite_car": 30,
-      "points": 66,
-      "avg_points": 66.0,
-      "avg_pos": 10.0,
-      "avg_pace_pos": 13.0,
-      "net_pos_gained": 3,
-      "avg_qualy_pos": 24.0,
-      "avg_qualy_gap": "+4.752",
-      "net_pos_gained_qualy": 14,
-      "avg_gap": "+5.115",
       "races": 1
     },
     {
@@ -894,20 +894,6 @@
       "avg_qualy_gap": "+1.012",
       "net_pos_gained_qualy": -9,
       "avg_gap": "+2.190",
-      "races": 1
-    },
-    {
-      "name": "Gael Duch\u00c3\u00aane ESP [SL]",
-      "favorite_car": 30,
-      "points": 45,
-      "avg_points": 45.0,
-      "avg_pos": 16.0,
-      "avg_pace_pos": 20.0,
-      "net_pos_gained": 4,
-      "avg_qualy_pos": 23.0,
-      "avg_qualy_gap": "+4.740",
-      "net_pos_gained_qualy": 7,
-      "avg_gap": "+6.480",
       "races": 1
     },
     {
@@ -33512,7 +33498,7 @@
           "qualy_gap": "+4.740",
           "qualy_gap_ms": 4740,
           "net_vs_q": 7,
-          "name": "Gael Duch\u00c3\u00aane ESP [SL]",
+          "name": "Gael Duch\u00eane ESP [SL]",
           "car_model": 30,
           "points": 45,
           "laps": 32,
@@ -35550,7 +35536,7 @@
         },
         {
           "pos": 23,
-          "name": "Gael Duch\u00c3\u00aane ESP [SL]",
+          "name": "Gael Duch\u00eane ESP [SL]",
           "car_model": 30,
           "best_lap": "2:32.702",
           "gap_pole": "+4.740",
