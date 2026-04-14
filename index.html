@@ -329,7 +329,7 @@
         34: "Porsche 911 GT3 R (992)", 35: "McLaren 720S GT3 Evo", 36: "Ford Mustang GT3"
     };
 
-    fetch('dashboard_data2.json?v=' + new Date().getTime())
+    fetch('dashboard_data.json?v=' + new Date().getTime())
         .then(response => response.json())
         .then(data => {
             fullData = data;
