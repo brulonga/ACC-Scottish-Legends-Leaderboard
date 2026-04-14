@@ -77,9 +77,9 @@
         
         <div class="mt-4 text-muted text-small">
             <p class="mb-1">* <strong>Net vs Qualy / Pace:</strong> Total positions gained or lost across the season vs starting grid / theoretical pace.</p>
-            <p class="mb-1">* To be classified, drivers must complete at least 50% of the leader's laps. Drivers below 50% (DNF) are excluded from these standings.</p>
+            <p class="mb-1">* To be classified, drivers must complete at least 50% of the leader's laps. Drivers below 50% are entirely excluded.</p>
+            <p class="mb-1">* DNFs (did not finish, but >50% completed) receive 0 points and do not affect Avg Race Pos, but retain pace telemetry.</p>
             <p class="mb-1">* Nürburgring 24h race is excluded from 'Avg Gap' stats due to its unusually long lap time.</p>
-            <p class="mb-3">* <strong>Incidents:</strong> Laps that fall outside 107% of the session's overall best lap.</p>
             
             <div class="promo-box mt-3 text-dark">
                 <p class="mb-1">📺 <strong>Watch replays:</strong> You can watch some of the races from this server on demand at <a href="https://www.youtube.com/@foxfaceracing" target="_blank" class="fw-bold text-decoration-none">@foxfaceracing</a></p>
@@ -146,7 +146,8 @@
                             <th>Car</th>
                             <th>Pts</th>
                             <th>Laps</th>
-                            <th>Race Gap</th> <th>Inc</th>
+                            <th>Race Gap</th> 
+                            <th>Inc</th>
                             <th>Avg Lap</th>
                             <th>Pace Gap</th>
                             <th>Best Lap</th>
@@ -166,12 +167,15 @@
                 </div>
             </div>
             <div class="table-responsive">
-                <table class="table table-hover align-middle w-75 mx-auto text-center">
+                <table class="table table-hover align-middle w-100 text-center">
                     <thead class="table-secondary">
                         <tr>
                             <th>Pos</th>
                             <th class="text-start">Driver</th>
                             <th>Car</th>
+                            <th>Sector 1</th>
+                            <th>Sector 2</th>
+                            <th>Sector 3</th>
                             <th>Best Lap</th>
                             <th>Gap to Pole</th>
                         </tr>
@@ -325,7 +329,7 @@
         34: "Porsche 911 GT3 R (992)", 35: "McLaren 720S GT3 Evo", 36: "Ford Mustang GT3"
     };
 
-    fetch('dashboard_data.json?v=' + new Date().getTime())
+    fetch('dashboard_data2.json?v=' + new Date().getTime())
         .then(response => response.json())
         .then(data => {
             fullData = data;
@@ -862,10 +866,11 @@
             });
         };
 
-        let paceDrivers = session.results.filter(r => r.pos !== "DNF" && r.gap_pace_ms !== undefined).sort((a, b) => a.gap_pace_ms - b.gap_pace_ms);
+        // AHORA PERMITIMOS QUE LOS DNF (CON DATOS) SALGAN EN LAS GRÁFICAS
+        let paceDrivers = session.results.filter(r => r.gap_pace_ms !== null && r.gap_pace_ms !== undefined).sort((a, b) => a.gap_pace_ms - b.gap_pace_ms);
         renderBar('chartRacePace', paceDrivers, d => d.gap_pace_ms/1000, ctx => ctx.raw===0?'PACE REF':`+${ctx.raw.toFixed(3)}s`, d => d.gap_pace_ms===0);
         
-        let bestDrivers = session.results.filter(r => r.pos !== "DNF" && r.gap_best_ms !== undefined).sort((a, b) => a.gap_best_ms - b.gap_best_ms);
+        let bestDrivers = session.results.filter(r => r.gap_best_ms !== null && r.gap_best_ms !== undefined).sort((a, b) => a.gap_best_ms - b.gap_best_ms);
         renderBar('chartRaceBest', bestDrivers, d => d.gap_best_ms/1000, ctx => ctx.raw===0?'BEST LAP':`+${ctx.raw.toFixed(3)}s`, d => d.gap_best_ms===0);
 
         if (session.qualy_results && session.qualy_results.length > 0) {
@@ -890,7 +895,6 @@
             const styleBest = r.gap_best === 'BEST LAP' ? `<span class="badge badge-purple">BEST LAP</span>` : (r.gap_best.includes('+') ? `<span class="gap-plus">${r.gap_best}</span>` : r.gap_best);
             let netQ = r.net_vs_q > 0 ? `<span class="text-success fw-bold">+${r.net_vs_q}</span>` : r.net_vs_q < 0 ? `<span class="text-danger fw-bold">${r.net_vs_q}</span>` : "-";
             
-            // EL RACE GAP (Ganador, +X.XXXs, o +1 Lap) QUE CALCULAMOS EN PYTHON SE AÑADE AQUÍ
             const styleRaceGap = r.race_gap === "WINNER" ? `<span class="badge badge-winner">WINNER</span>` : (r.race_gap.includes('+') ? `<span class="gap-plus">${r.race_gap}</span>` : r.race_gap);
 
             rBody.innerHTML += `
@@ -920,11 +924,16 @@
                 const nameHtml = isGlobal ? `<span class="driver-link" onclick="openDriverProfile('${r.name}')">${r.name}</span>` : `<span class="text-muted fw-bold">${r.name}</span>`;
 
                 const styleGap = r.gap_pole === 'POLE' ? `<span class="badge badge-purple">POLE</span>` : (r.gap_pole.includes('+') ? `<span class="gap-plus">${r.gap_pole}</span>` : r.gap_pole);
+                
+                // RENDERING DE LOS SECTORES
                 qBody.innerHTML += `
                     <tr>
                         <td class="fw-bold">${r.pos}</td>
                         <td class="fw-bold text-start">${nameHtml}</td>
                         <td><small class="text-muted">${carNames[r.car_model]||"Unknown"}</small></td>
+                        <td><small>${r.s1}</small></td>
+                        <td><small>${r.s2}</small></td>
+                        <td><small>${r.s3}</small></td>
                         <td class="fw-bold">${r.best_lap}</td>
                         <td>${styleGap}</td>
                     </tr>`;
