@@ -888,7 +888,12 @@
         rBody.innerHTML = ""; 
         session.results.forEach(r => {
             const isGlobal = fullData.global.some(d => d.name === r.name);
-            const penHtml = r.penalty > 0 ? `<span class="badge bg-danger rounded-pill py-0 px-1 ms-1">+${r.penalty}s</span>` : "";
+            let penHtml = "";
+            if (r.penalty > 0) {
+                penHtml = `<span class="badge bg-danger rounded-pill py-0 px-1 ms-1">+${r.penalty}s</span>`;
+            } else if (r.penalty < 0) {
+                penHtml = `<span class="badge bg-success rounded-pill py-0 px-1 ms-1">${r.penalty}s</span>`;
+            }
             const nameHtml = isGlobal ? `<span class="driver-link" onclick="openDriverProfile('${r.name}')">${r.name}</span>${penHtml}` : `<span class="text-muted fw-bold">${r.name}</span>${penHtml}`;
 
             const stylePace = r.gap_pace === 'PACE REF' ? `<span class="badge badge-purple">PACE REF</span>` : (r.gap_pace.includes('+') ? `<span class="gap-plus">${r.gap_pace}</span>` : r.gap_pace);

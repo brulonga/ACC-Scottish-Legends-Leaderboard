@@ -5,7 +5,7 @@ import os
 # --- CONFIGURATION ---
 MIN_LAPS_STATS = 0.50        # 50%: Mínimo para extraer telemetría y ritmo (pero no suma carrera ni puntos)
 MIN_LAPS_CLASSIFIED = 0.90   # 90%: Mínimo para recibir puntos, contar como carrera terminada y afectar a la media
-OUTPUT_FILE = "dashboard_data2.json"
+OUTPUT_FILE = "dashboard_data.json"
 
 # --- SISTEMA DE SANCIONES ---
 PENALTIES = {
@@ -47,6 +47,10 @@ PENALTIES = {
 
         "Bruno Longarela": 5
 
+    },
+
+    "paul_ricard": {
+        "Bruno Longarela": -5
     }
 
 }
@@ -159,7 +163,7 @@ def load_and_process():
             penalty_sec = PENALTIES.get(track_name, {}).get(driver_name, 0)
             
             ttime = line['timing']['totalTime']
-            if penalty_sec > 0 and ttime > 0 and ttime < 2000000000:
+            if penalty_sec != 0 and ttime > 0 and ttime < 2000000000:
                 line['timing']['totalTime'] += (penalty_sec * 1000)
                 line['penalty_applied'] = penalty_sec
             else:
@@ -184,55 +188,78 @@ def load_and_process():
             q_leaderboard = q_data['sessionResult']['leaderBoardLines']
             q_is_wet = q_data['sessionResult'].get('isWetSession', 0)
             
-            # --- EXTRAER SECTORES DE QUALY ---
-            q_driver_cars = {}
+            # --- FILTRO ANTI-DUPLICADOS EN QUALY ---
+            # Si un piloto entra con dos coches distintos en Qualy, nos quedamos solo con su mejor vuelta
+            best_q_lines = {}
             for line in q_leaderboard:
                 d_name = f"{line['currentDriver']['firstName']} {line['currentDriver']['lastName']}".strip()
+                c_class = "GT4" if line['car']['carGroup'] == "GT4" else "GT3"
+                q_pid = f"{d_name}::{c_class}"
+                q_time = line['timing']['bestLap']
+                
+                if q_pid not in best_q_lines:
+                    best_q_lines[q_pid] = line
+                else:
+                    if q_time < best_q_lines[q_pid]['timing']['bestLap']:
+                        best_q_lines[q_pid] = line
+                        
+            # Construimos el leaderboard limpio de Qualy
+            sorted_q_lines = list(best_q_lines.values())
+            sorted_q_lines.sort(key=lambda x: x['timing']['bestLap'])
+
+            # Extraer sectores de Qualy asociándolos al ID correcto (Nombre+Clase)
+            q_driver_cars = {}
+            for line in sorted_q_lines:
+                d_name = f"{line['currentDriver']['firstName']} {line['currentDriver']['lastName']}".strip()
+                c_class = "GT4" if line['car']['carGroup'] == "GT4" else "GT3"
+                q_pid = f"{d_name}::{c_class}"
                 cid = line['car']['carId']
-                q_driver_cars[cid] = d_name
+                q_driver_cars[cid] = q_pid
 
             q_best_laps_splits = {}
             for lap in q_data.get('laps', []):
                 cid = lap['carId']
-                d_name = q_driver_cars.get(cid)
-                if not d_name: continue
+                q_pid = q_driver_cars.get(cid)
+                if not q_pid: continue
                 ltime = lap['laptime']
                 splits = lap.get('splits', [])
                 if ltime < 2000000000:
-                    if d_name not in q_best_laps_splits or ltime < q_best_laps_splits[d_name]['laptime']:
-                        q_best_laps_splits[d_name] = {'laptime': ltime, 'splits': splits}
+                    if q_pid not in q_best_laps_splits or ltime < q_best_laps_splits[q_pid]['laptime']:
+                        q_best_laps_splits[q_pid] = {'laptime': ltime, 'splits': splits}
             # ---------------------------------
 
-            for line in q_leaderboard:
+            for line in sorted_q_lines:
                 c_class = "GT4" if line['car']['carGroup'] == "GT4" else "GT3"
                 bl = line['timing']['bestLap']
                 if bl < 2000000000 and bl < qualy_pole_ms[c_class]:
                     qualy_pole_ms[c_class] = bl
 
             valid_q_pos = {"GT3": 1, "GT4": 1}
-            for line in q_leaderboard:
+            for line in sorted_q_lines:
                 c_class = "GT4" if line['car']['carGroup'] == "GT4" else "GT3"
                 driver_name = f"{line['currentDriver']['firstName']} {line['currentDriver']['lastName']}".strip()
+                q_pid = f"{driver_name}::{c_class}"
                 q_time = line['timing']['bestLap']
                 
-                splits = q_best_laps_splits.get(driver_name, {}).get('splits', [])
+                splits = q_best_laps_splits.get(q_pid, {}).get('splits', [])
                 s1 = format_time(splits[0]) if len(splits) > 0 and splits[0] else "-"
                 s2 = format_time(splits[1]) if len(splits) > 1 and splits[1] else "-"
                 s3 = format_time(splits[2]) if len(splits) > 2 and splits[2] else "-"
                 
                 is_valid = q_time < 2000000000
                 pos = valid_q_pos[c_class] if is_valid else "-"
-                gap_ms = q_time - qualy_pole_ms[c_class] if is_valid and qualy_pole_ms[c_class] < 2000000000 else 0
+                gap_ms = q_time - qualy_pole_ms[c_class] if is_valid and qualy_pole_ms[c_class] < 2000000000 else None
 
-                qualy_dict[driver_name] = {
+                qualy_dict[q_pid] = {
                     "pos": pos,
                     "time_ms": q_time if is_valid else None,
-                    "gap_ms": gap_ms if is_valid else None,
+                    "gap_ms": gap_ms,
                     "s1": s1,
                     "s2": s2,
                     "s3": s3,
                     "car_model": line['car']['carModel'],
-                    "car_class": c_class
+                    "car_class": c_class,
+                    "d_name": driver_name
                 }
                 
                 if is_valid:
@@ -256,7 +283,6 @@ def load_and_process():
             if timing['bestLap'] < 2000000000 and timing['bestLap'] < session_best_lap[c_class]:
                 session_best_lap[c_class] = timing['bestLap']
 
-        # NUEVO: Doble sistema de porcentajes
         min_laps_stats = {
             "GT3": max_laps_session["GT3"] * MIN_LAPS_STATS,
             "GT4": max_laps_session["GT4"] * MIN_LAPS_STATS
@@ -317,6 +343,7 @@ def load_and_process():
             name = f"{driver['firstName']} {driver['lastName']}".strip() 
             pid = f"{name}::{c_class}" 
             
+            # Filtro Anti-Duplicados también en la Carrera
             if pid in seen_pids: continue
             seen_pids.add(pid)
             
@@ -328,7 +355,6 @@ def load_and_process():
             best_lap = timing['bestLap']
             penalty_applied = line.get('penalty_applied', 0)
 
-            # APLICACIÓN DEL 90% Y EL 50%
             has_stats = laps >= min_laps_stats[c_class]
             gets_points = laps >= min_laps_classified[c_class]
 
@@ -339,7 +365,6 @@ def load_and_process():
                 real_pos_num = valid_pos_counter[c_class]
                 points = POINTS_SYSTEM.get(valid_pos_counter[c_class], 0)
                 
-                # CALCULAR RACE GAP
                 if valid_pos_counter[c_class] == 1:
                     leader_laps[c_class] = laps
                     leader_time[c_class] = total_time
@@ -389,8 +414,8 @@ def load_and_process():
                 gap_best_str = f"+{diff/1000:.3f}" if diff > 0 else "BEST LAP"
                 current_best_gap_ms = diff
 
-            # --- CORRECCIÓN DEL ERROR DE DIVISIÓN POR ZERO (NONE) ---
-            q_info = qualy_dict.get(name, None)
+            # Encontramos la Qualy buscando por PID (Nombre::Clase)
+            q_info = qualy_dict.get(pid, None)
             
             if q_info and q_info['pos'] != "-":
                 q_pos = q_info['pos']
@@ -402,12 +427,9 @@ def load_and_process():
                 q_time_str = "-"
                 q_gap_ms = None
                 q_gap_str = "-"
-            # --------------------------------------------------------
             
-            # Solo suma posiciones vs Qualy si terminaste la carrera recibiendo puntos
             net_vs_q = q_pos - real_pos_num if gets_points and q_pos != "-" else "-"
 
-            # OJO: Se añaden TODOS los pilotos, aunque tengan stats rotas o DNF.
             temp_drivers.append({
                 "pid": pid, "car_class": c_class, "has_stats": has_stats, "gets_points": gets_points, 
                 "real_pos_num": real_pos_num, "pos": display_pos, 
@@ -416,7 +438,7 @@ def load_and_process():
                 "s1": q_info['s1'] if q_info else "-", "s2": q_info['s2'] if q_info else "-", "s3": q_info['s3'] if q_info else "-",
                 "qualy_gap": q_gap_str, "qualy_gap_ms": q_gap_ms, "net_vs_q": net_vs_q,
                 "name": name, "car_model": car_model, "points": points,
-                "laps": laps, # Muestra las vueltas reales
+                "laps": laps, 
                 "incidents": incidents, 
                 "avg_time": format_time(avg_lap_driver_ms) if has_stats else "-",
                 "avg_lap_ms": avg_lap_driver_ms, "lap_history": lap_history, 
@@ -438,15 +460,14 @@ def load_and_process():
         session_results = []
         qualy_results_export = [] 
         
-        # --- EXPORTACIÓN DE QUALY ---
-        for d_name, q_info in qualy_dict.items():
+        for q_pid, q_info in qualy_dict.items():
             q_gap_str = "-"
             if q_info['gap_ms'] is not None:
                 q_gap_str = "POLE" if q_info['gap_ms'] == 0 else f"+{q_info['gap_ms']/1000:.3f}s"
                 
             qualy_results_export.append({
                 "pos": q_info['pos'], 
-                "name": d_name, 
+                "name": q_info['d_name'], 
                 "car_class": q_info['car_class'],
                 "car_model": q_info['car_model'], 
                 "s1": q_info['s1'], 
@@ -462,13 +483,20 @@ def load_and_process():
             return (x['car_class'], p if isinstance(p, int) else 9999)
         
         qualy_results_export.sort(key=q_sort_key)
-        # ------------------------------------------------------------------------
 
         for d in temp_drivers:
             pid = d['pid']
             c_class = d['car_class']
             
-            if not d['has_stats']: continue 
+            if not d['has_stats']: 
+                d_export = d.copy()
+                del d_export['pid']
+                del d_export['has_stats']
+                del d_export['gets_points']
+                del d_export['real_pos_num']
+                del d_export['has_valid_pace_gap']
+                session_results.append(d_export)
+                continue 
             
             if pid not in global_drivers:
                 global_drivers[pid] = {
@@ -482,7 +510,6 @@ def load_and_process():
             
             global_drivers[pid]["cars"][d['car_model']] = global_drivers[pid]["cars"].get(d['car_model'], 0) + 1
             
-            # SOLO SUMAMOS PUNTOS Y MEDIAS SI TERMINÓ DE VERDAD (90%)
             if d['gets_points']:
                 global_drivers[pid]["races"] += 1 
                 global_drivers[pid]["total_points"] += d['points']
@@ -492,7 +519,6 @@ def load_and_process():
                 if d['pace_pos'] != "-":
                     global_drivers[pid]["pos_gained_vs_pace"] += (d['pace_pos'] - d['real_pos_num'])
 
-            # Ritmo y Qualy se suman si tiene estadísticas (50%), aunque abandonara
             if d['pace_pos'] != "-":
                 global_drivers[pid]["pace_pos_sum"] += d['pace_pos']
                 global_drivers[pid]["pace_pos_count"] += 1
